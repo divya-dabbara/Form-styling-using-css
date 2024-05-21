@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      input[type="text"] {
+        width: 450px;
+        color: blue;
+        background-color: lavender;
+        padding: 7px;
+      }
+      input[type="tel"] {
+        width: 450px;
+        color: white;
+        background-color: blueviolet;
+        padding: 7px;
+      }
+      input[type="email"] {
+        width: 450px;
+        color: white;
+        background-color: blueviolet;
+        padding: 7px;
+      }
+      input[type="password"] {
+        width: 450px;
+        color: orangered;
+        background-color: skyblue;
+        padding: 7px;
+      }
+      input[type="date"] {
+        width: 450px;
+        color: rebeccapurple;
+        background-color: powderblue;
+        padding: 7px;
+      }
+      input[type="file"] {
+        width: 450px;
+        color: red;
+        background-color: pink;
+        padding: 7px;
+      }
+      input[type="submit"] {
+        width: 450px;
+        color: black;
+        background-color: green;
+        padding: 7px;
+      }
+      input[type="reset"] {
+        width: 450px;
+        color: black;
+        background-color: orangered;
+        padding: 7px;
+      }
+      [for$="name"] {
+        width: 450px;
+        color: blue;
+        background-color: lavender;
+        padding: 7px;
+      }
+      [for="number"] {
+        width: 450px;
+        color: white;
+        background-color: blueviolet;
+        padding: 7px;   
+      }
+      [for="email"] {
+        width: 450px;
+        color: white;
+        background-color: blueviolet;
+        padding: 7px;
+      }
+      label[for="password"] {
+        width: 450px;
+        color: orangered;
+        background-color: skyblue;
+        padding: 7px;
+      }
+      [for="dob"] {
+        width: 450px;
+        color: rebeccapurple;
+        background-color: powderblue;
+        padding: 7px;
+      }
+      p{
+        width: 450px;
+        color: blue;
+        background-color: lavender;
+        padding: 7px;
+      }
+      [for="gd"]{
+        width: 450px;
+        color: blue;
+        background-color: lavender;
+        padding: 7px;
+      }
+      [for="yop"]{
+        width: 450px;
+        color: rebeccapurple;
+        background-color: powderblue;
+        padding: 7px;  
+      }
+      [for="jf"]{
+        width: 450px;
+        color: rebeccapurple;
+        background-color: powderblue;
+        padding: 7px;  
+      }
+      [for="resume"]{
+        width: 450px;
+        color: black;
+        background-color: pink;
+        padding: 7px;
+      }
+      [for="photo"]{
+        width: 450px;
+        color: blue;
+        background-color: pink;
+        padding: 7px;
+      }
+      [for="card"]{
+        width: 450px;
+        color: rebeccapurple;
+        background-color: pink;
+        padding: 7px;
+      }
+      [for="declaration"]{
+        width: 450px;
+        color: purple;
+        background-color: peachpuff;
+        padding: 7px;
+      }   
+    </style>
+  </head>
+  <body style="background-color: beige;">
+    <form>
+      <fieldset>
+        <legend><em>JOB APPLICATION FORM</em></legend>
+        <em>
+          <label for="fname">Enter First Name:</label>
+          <input type="text" id="fname" required name="firstname" /><br /><br />
+          <label for="mname">Enter Middle Name:</label>
+          <input type="text" id="mname" name="middlename" /><br /><br />
+          <label for="lname">Enter Last Name:</label>
+          <input type="text" id="lname" required name="lastname" /><br /><br />
+
+          <label for="number">Enter Mobile number:</label>
+          <input
+            type="tel"
+            id="number"
+            required
+            name="mobilenumber"
+          /><br /><br />
+
+          <label for="email">Enter Email Id:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="eg:XXX@gmail.com"
+            required
+            name="email"
+          /><br /><br />
+
+          <label for="password">Create Password:</label>
+          <input
+            type="password"
+            id="password"
+            required
+            name="password"
+            placeholder="eg:4Theplace="
+            pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          /><br /><br />
+          <label for="password">Retype Password:</label>
+          <input
+            type="password"
+            id="password"
+            required
+            name="password"
+            pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          /><br /><br />
+
+          <label for="dob">Select your Date of Birth:</label>
+          <input type="date" id="dob" required name="dateofbirth" />
+
+          <p>Enter gender:</p>
+          <input type="radio" id="male" name="gender" value="user is male" />
+          <label for="male">Male</label><br />
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="user is female"
+          />
+          <label for="female">Female</label><br />
+          <input
+            type="radio"
+            id="nonbinary"
+            name="gender"
+            value="user is non-binary"
+          />
+          <label for="nonbinary">Non-Binary</label><br />
+          <input
+            type="radio"
+            id="prefernottosay"
+            name="gender"
+            value="user prefers not to say"
+          />
+          <label for="prefernottosay">I prefer not to say</label><br /><br />
+
+          <p>Work Experience</p>
+
+          <input
+            type="radio"
+            id="workexperience1"
+            name="workexperience"
+            value="workexperience1"
+          />
+          <label for="workexperience1">Fresher</label><br />
+          <input
+            type="radio"
+            id="workexperience2"
+            name="workexperience"
+            value="workexperience2"
+          />
+          <label for="workexperience2">0-2 years</label><br />
+          <input
+            type="radio"
+            id="workexperience3"
+            name="workexperience"
+            value="workexperience3"
+          />
+          <label for="workexperience3">More than 2 years</label><br /><br />
+
+          <label for="gd">Enter your Graduation Degree:</label>
+          <input
+            type="text"
+            id="gd"
+            placeholder="eg:Electronics and Communication Engineering"
+            name="graduationdegree"
+          /><br /><br />
+
+          <label for="yop">Year of Passout:</label>
+          <input type="date" id="yop" name="yearofpassout" /><br /><br />
+
+          <label for="clgname">Enter your College Name:</label>
+          <input type="text" id="clgname" required name="clgname" /><br /><br />
+          <label for="univname">Enter your University Name:</label>
+          <input
+            type="text"
+            id="univname"
+            required
+            name="universityname"
+          /><br /><br />
+
+          <p>Position you are applying for:</p>
+          <input
+            type="radio"
+            id="fullstackdeveloper"
+            name="position"
+            value="fullstackdeveloper"
+          />
+          <label for="fullstackdeveloper">Full-Stack Developer</label><br />
+          <input
+            type="radio"
+            id="frontenddeveloper"
+            name="position"
+            value="frontenddeveloper"
+          />
+          <label for="frontenddeveloper">Front-End Developer</label><br />
+          <input
+            type="radio"
+            id="backenddeveloper"
+            name="position"
+            value="backenddeveloper"
+          />
+          <label for="backenddeveloper">Back-End Developer</label><br />
+          <input
+            type="radio"
+            id="testengineer"
+            name="position"
+            value="testengineer"
+          />
+          <label for="testengineer">Test Engineer</label><br />
+
+          <p>Prefereed Location:</p>
+          <input
+            type="radio"
+            id="hyderabad"
+            name="location"
+            value="hyderabad"
+          />
+          <label for="hyderabad">Hyderabad</label><br />
+          <input
+            type="radio"
+            id="bengaluru"
+            name="location"
+            value="bengaluru"
+          />
+          <label for="bengaluru">Bengaluru</label><br />
+          <input type="radio" id="mumbai" name="location" value="mumbai" />
+          <label for="mumbai">Mumbai</label><br />
+          <input type="radio" id="gurgaon" name="location" value="gurgaon" />
+          <label for="gurgaon">Gurgaon</label><br /><br />
+
+          <label for="jf">Available to join from:</label>
+          <input type="date" id="jf" name="availabletojoin" va /><br /><br />
+
+          <label for="resume">Please upload your Resume:</label>
+          <br /><br /><input
+            type="file"
+            id="resume"
+            required
+            accept=".pdf"
+          /><br /><br />
+          <label for="photo">Please upload your Passport Photo:</label>
+          <br /><br /><input
+            type="file"
+            id="photo"
+            required
+            accept="image/*,"
+          /><br /><br />
+          <label for="card"
+            >Please upload any of your Gov. Identification card (eg:Aadhaar,
+            Pan, Passport etc.):</label
+          >
+          <br /><br /><input
+            type="file"
+            id="resume"
+            required
+            accept=".pdf"
+          /><br /><br />
+
+          <input
+            type="checkbox"
+            id="declaration"
+            name="declaration"
+            value="declaration"
+          />
+          <label for="declaration"
+            >I agree that all the information provided by me is true and
+            correct</label
+          >
+
+          <br /><br /><input type="submit" value="Submit" /> <br /><br /><input
+            type="reset"
+            value="Reset"
+          />
+        </em>
+      </fieldset>
+    </form>
+  </body>
+</html>
